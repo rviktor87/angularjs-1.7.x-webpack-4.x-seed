@@ -4,5 +4,5 @@ import angular from 'angular';
 let app = angular.module('App',[]);
 
 app.controller('AppController', function() {
-    this.message = 'Hello. My First AngularJS App';
+    this.message = 'Hello AngularJS 1.7.x!';
 });
