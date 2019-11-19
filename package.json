@@ -1,7 +1,7 @@
 {
   "name": "angularjs-with-webpack",
   "version": "1.0.0",
-  "description": "AngularJS seed with Webpack",
+  "description": "AngularJS 1.7.x seed with Webpack 4",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
     "build": "webpack --config webpack.config.js"
   },
   "dependencies": {
-    "angular": "^1.7.5"
+    "angular": "^1.7.9"
   },
   "devDependencies": {
     "css-loader": "^1.0.0",
