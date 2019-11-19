@@ -13,12 +13,24 @@ module.exports = {
         vendor: Object.keys(packageJson.dependencies),
         app: "./app/index.js"
     },
+    /*
     resolve: {
         extensions: ['.js']
     },
+     */
     module: {
         rules:
             [
+                {
+                    test: /\.m?js$/,
+                    exclude: /(node_modules)/,
+                    use: {
+                        loader: 'babel-loader',
+                        options: {
+                            presets: ['@babel/preset-env']
+                        }
+                    }
+                },
                 { test:/\.css$/, use:['style-loader','css-loader'] },
                 { test: /.html$/, use: ["raw-loader"]},
             ]
