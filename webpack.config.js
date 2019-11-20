@@ -10,8 +10,8 @@ module.exports = {
         filename: "[name].bundle.js"
     },
     entry: {
-        vendor: Object.keys(packageJson.dependencies),
-        app: "./app/index.js"
+        // vendor: Object.keys(packageJson.dependencies), // we are using import in the program code
+        app: "./app/app.module.js"
     },
     resolve: {
         extensions: ['.js']
@@ -19,8 +19,8 @@ module.exports = {
     module: {
         rules:
             [
-                { test:/\.css$/, use:['style-loader','css-loader'] },
-                { test: /.html$/, use: ["raw-loader"]},
+                {test: /\.css$/, use: ['style-loader', 'css-loader']},
+                {test: /\.html$/, use: ["raw-loader"]},
             ]
     },
     mode: 'development',
@@ -29,7 +29,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             hash: true,
             template: './app/index.html',
-            path: path.join(__dirname,"/dist/"),
+            path: path.join(__dirname, "/dist/"),
             filename: 'index.html'
         })
     ]
