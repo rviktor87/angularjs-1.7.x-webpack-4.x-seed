@@ -6,4 +6,4 @@ run: `npm install`
 
 ## Usage
 For development use:
-`npm run dev`
+`npm start`
