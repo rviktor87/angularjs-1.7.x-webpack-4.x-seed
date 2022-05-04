@@ -9,7 +9,7 @@
     "build": "webpack --config webpack.config.js"
   },
   "dependencies": {
-    "angular": "^1.7.9"
+    "angular": "^1.8.3"
   },
   "devDependencies": {
     "css-loader": "^1.0.0",
